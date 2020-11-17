@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>sign up</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <meta http-equiv="refresh" content="30"> -->
+      <link rel="stylesheet" href="main.css">
+      <link rel="icon"  href="images/Asset 2.png">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="fonts/fonts/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="css/main.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-light ">
+         <div class="container-sm">
+            <div class="row">
+               <div class="col-2">
+                  <a class="navbar-brand" href="#"><img src="images/Asset 2.png" width="120" height="120"></a>
+               </div>
+            </div>
+            <div class="input-wrap mr-sm-2 d-block d-lg-none  d-xl-none">
+               <input type="search"  class=""name="" value="">
+            </div>
+            <a class=" cart2 d-block d-lg-none  d-xl-none " href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col">
+               <div class="upper-row">
+                  <div class="row mt-lg-2 mb-lg-2">
+                     <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                           <div class="input-wrap mr-sm-2 d-none d-lg-block d-xl-none d-none d-xl-block">
+                              <input type="search" class="" name="" value="">
+                           </div>
+                           <span class="d-none d-lg-block d-xl-none d-none d-xl-block" onclick="location.href='signin.html'">sign in</span>
+                           <span class="d-none d-lg-block d-xl-none d-none d-xl-block">En</span>
+                           <button type="button" name="button" class="d-none d-lg-block d-xl-none d-none d-xl-block" onclick="location.href='signup.html'">create your free account</button>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="clearfix">
+                  </div>
+                  <div class="lower-row">
+                     <div class="row ">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                           <ul class="navbar-nav px-3">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html#about_us">About Us</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="admin/admin.html">Admin</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html#NewArrivals_BestSellers">New Arrivals/Best Sellers</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html#category">Categories</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html#contact_us">Contact Us</a>
+                              </li>
+                              <li class="nav-item d-none d-lg-block d-xl-none d-none d-xl-block ">
+                                 <a class="nav-link cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                              </li>
+                              <li class="nav-item d-block d-lg-none  d-xl-none ">
+                                 <a class="nav-link" href="signin.html">sign in</a>
+                              </li>
+                              <li class="nav-item d-block d-lg-none  d-xl-none ">
+                                 <a class="nav-link">en</a>
+                              </li>
+                              <li class="nav-item d-block d-lg-none  d-xl-none  my-3">
+                                 <button type="button" name="button" onclick="location.href='signup.html'">create your free account</button>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <section id="sign-up">
+         <div class="container">
+            <div class="w-100 color2">
+               <h2 class="text-center">sign up</h2>
+            </div>
+            <form>
+               <div class="form-row mb-3">
+                  <div class="col">
+                     <input class="form-control" type="text" name="name_ar" placeholder="your name in arabic" pattern="^[\u0621-\u064A ]+$" title="your name must be in Arabic character only" autocomplete="on" autofocus  required >
+                  </div>
+                  <div class="col">
+                     <input type="text" name="name_en" class="form-control" placeholder="your name in english" pattern="^[a-zA-Z ]+$" title="your name must be in English character only" autocomplete="on" required>
+                  </div>
+               </div>
+               <div class="form-group mb-3">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" name="email" title="your email must be like that name@domain-name.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@domain-name.com"  pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"required >
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+               </div>
+               <fieldset class="form-group mb-3">
+                  <div class="row">
+                     <legend class="col-form-label col-sm-1 pt-0">Gender</legend>
+                     <div class="col-sm-11">
+                        <div class="form-check-inline">
+                           <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="male" checked >
+                           <label class="form-check-label" for="gridRadios1">
+                           male
+                           </label>
+                        </div>
+                        <div class="form-check-inline">
+                           <input class="form-check-input" type="radio" name="gender" id="gridRadios2" value="female">
+                           <label class="form-check-label" for="gridRadios2">
+                           female
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </fieldset>
+               <div class="form-group mb-3">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1" title="your password must be 8 caharacters at least" placeholder="at least 8 characters" pattern="^.{8,}$" required >
+               </div>
+               <div class="form-group mb-3">
+                  <label for="exampleInputPassword1">Re-enter password</label>
+                  <input type="password" name="confirm-password" class="form-control" id="exampleInputPassword1"title="confirm-password must match the password" placeholder="re-enter your password" pattern="^.{8,}$" required>
+               </div>
+               <div class="form-group form-check check-shape ">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" name="agree" required >
+                  <label class="form-check-label" for="exampleCheck1">I agree all terms </label>
+               </div>
+               <button type="submit" class="btn btn-primary sign ">Sign Up</button>
+            </form>
+            <div class="w-100 color2">
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div id="upper-footer">
+            <p class="text-center">copyright@2020.All Rights Reserved</p>
+            <div class="social-links text-center">
+               <i class="fab fa-twitter fa-3x"></i>
+               <i class="fab fa-instagram fa-3x"></i>
+               <i class="fab fa-facebook fa-3x"></i>
+            </div>
+         </div>
+      </footer>
+      <script  src="js/jquery-3.5.1.min.js">  </script>
+      <script src="js/popper.min.js" ></script>
+      <script  src="js/bootstrap.min.js">  </script>
+      <script  src="js/script.js">  </script>
+   </body>
+</html>
