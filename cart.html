@@ -13,7 +13,7 @@
       <link href="css/main.css" rel="stylesheet">
    </head>
    <body>
-     <nav class="navbar navbar-expand-lg navbar-light ">
+     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-sm">
            <div class="row">
               <div class="col-2">
@@ -29,7 +29,7 @@
            </button>
            <div class="col">
               <div class="upper-row">
-                 <div class="row mt-lg-2 mb-lg-2">
+                 <div class="row mb-lg-2">
                     <div class="collapse navbar-collapse" id="navbarNav">
                        <ul class="navbar-nav">
                           <div class="input-wrap mr-sm-2 d-none d-lg-block d-xl-none d-none d-xl-block">
@@ -37,21 +37,23 @@
                           </div>
                           <span class="d-none d-lg-block d-xl-none d-none d-xl-block" onclick="location.href='signin.html'">sign in</span>
                           <span class="d-none d-lg-block d-xl-none d-none d-xl-block">En</span>
+                          <span class="d-none d-lg-block d-xl-none d-none d-xl-block" onclick="location.href='favouritelist.html'"><i class="fab fa-gratipay"></i>
+                          </span>
+
                           <button type="button" name="button" class="d-none d-lg-block d-xl-none d-none d-xl-block" onclick="location.href='signup.html'">create your free account</button>
                        </ul>
                     </div>
                  </div>
-                 <div class="clearfix">
-                 </div>
+                 <div class="clearfix"> </div>
                  <div class="lower-row">
-                    <div class="row ">
+                    <div class="row">
                        <div class="collapse navbar-collapse" id="navbarNav">
                           <ul class="navbar-nav px-3">
                              <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                              </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="index.html#about_us">About Us</a>
+                                <a class="nav-link" href="#about_us">About Us</a>
                              </li>
                              <li class="nav-item">
                                 <a class="nav-link" href="admin/admin.html">Admin</a>
@@ -65,17 +67,20 @@
                              <li class="nav-item">
                                 <a class="nav-link" href="index.html#contact_us">Contact Us</a>
                              </li>
-                             <li class="nav-item d-none d-lg-block d-xl-none d-none d-xl-block ">
-                                <a class="nav-link cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                             <li class="nav-item d-none d-lg-block d-xl-none d-none d-xl-block cart">
+                                <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
                              </li>
                              <li class="nav-item d-block d-lg-none  d-xl-none ">
-                                <a class="nav-link" href="signin.html">sign in</a>
+                                <a class="nav-link " href="signin.html">sign in</a>
+                             </li>
+                             <li class="nav-item d-block d-lg-none  d-xl-none ">
+                                <a class="nav-link " href="favouritelist.html">favourite list</a>
                              </li>
                              <li class="nav-item d-block d-lg-none  d-xl-none ">
                                 <a class="nav-link">en</a>
                              </li>
-                             <li class="nav-item d-block d-lg-none  d-xl-none  my-3">
-                                <button type="button" name="button" onclick="location.href='signup.html'">create your free account</button>
+                             <li class="nav-item d-block d-lg-none  d-xl-none my-3">
+                                <button type="button" name="button" onclick="location.href='signup.html';">create your free account</button>
                              </li>
                           </ul>
                        </div>
@@ -85,7 +90,8 @@
            </div>
         </div>
      </nav>
-      <section id="cart-page">
+
+    <section id="cart-page">
          <div class="container">
             <div class="row my-5">
                <div class="col">
@@ -111,7 +117,7 @@
                         </div>
                         <hr>
                         <button type="button" name="button" class="delete-button">Delete</button>
-                        <button type="button" name="button" class="Add-To-Wishlist">Add to Wishlist</button>
+                        <button type="button" name="button" class="Add-To-Wishlist">Add To Favourite</button>
 
                      </div>
                   </div>
@@ -136,7 +142,7 @@
                         </div>
                         <hr>
                         <button type="button" name="button" class="delete-button">Delete</button>
-                        <button type="button" name="button" class="Add-To-Wishlist">Add to Wishlist</button>
+                        <button type="button" name="button" class="Add-To-Wishlist">Add To Favourite</button>
 
                      </div>
                   </div>
@@ -156,7 +162,7 @@
                         <hr>
                         <img src="images/card.png" alt="" class="d-block mx-auto">
                      </div>
-                     <button type="button" name="button" class="checkout-button mx-auto d-block">processed to checkout</button>
+                     <button type="button" name="button" class="checkout-button mx-auto d-block" onclick="location.href='checkout.html'">processed to checkout</button>
                   </div>
                   <p>Questions?
                      <a href="index.html#contact_us">Contact Customer Service</a>

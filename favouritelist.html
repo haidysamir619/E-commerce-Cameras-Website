@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <title>category</title>
+      <title>cart</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- <meta http-equiv="refresh" content="30"> -->
       <link rel="stylesheet" href="main.css">
@@ -59,13 +59,13 @@
                                 <a class="nav-link" href="admin/admin.html">Admin</a>
                              </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="index#NewArrivals_BestSellers">New Arrivals/Best Sellers</a>
+                                <a class="nav-link" href="index.html#NewArrivals_BestSellers">New Arrivals/Best Sellers</a>
                              </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="index#category">Categories</a>
+                                <a class="nav-link" href="index.html#category">Categories</a>
                              </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="index#contact_us">Contact Us</a>
+                                <a class="nav-link" href="index.html#contact_us">Contact Us</a>
                              </li>
                              <li class="nav-item d-none d-lg-block d-xl-none d-none d-xl-block cart">
                                 <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
@@ -91,84 +91,57 @@
         </div>
      </nav>
 
-      <section id="category-page">
-         <div class="container">
-            <div class="category-name-sort">
-               <div class="name float-left">
-                  <span class="category-title">DSLR Cameras</span>
-                  <!-- <span class="item-found">(<span>2</span>)item found</span> -->
-               </div>
-               <div class="sort text-right">
-                  <span>sortby:</span>
-                  <select class="" name="">
-                     <option value="">top rated</option>
-                     <option value="">price:low to high</option>
-                     <option value="">price:hight to low</option>
-                  </select>
-               </div>
-            </div>
-            <div class="clearfix">
-            </div>
-            <div class="row all-products">
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                  <div class="product mb-lg-0 mb-4">
-                     <img src="images/c.png" width="220" height="200" alt="" class="mx-auto d-block">
-                     <h6 class="">D3500 DSLR With AF-P DX NIKKOR 18-55mm f/3.55.6G VR Lens 24.2MP And Bluetooth</h6>
-                     <span class="d-block price float-left" >EGP1,676,00</span>
-                     <div class="rate text-right">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                     </div>
-                     <div class="clearfix">   </div>
-                     <div class="text-center">
-                        <button type="button" name="button" class="Add-To-Cart mb-md-2">Add to cart</button>
-                        <button type="button" name="button" class="Add-To-Wishlist">Add To Favourite</button>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                  <div class="product mb-lg-0 mb-4">
-                     <img src="images/c.png" width="220" height="200" alt="" class="mx-auto d-block">
-                     <h6 class="">D3500 DSLR With AF-P DX NIKKOR 18-55mm f/3.55.6G VR Lens 24.2MP And Bluetooth</h6>
-                     <span class="d-block price float-left" >EGP1,676,00</span>
-                     <div class="rate text-right">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                     </div>
-                     <div class="clearfix">   </div>
-                     <div class="text-center">
-                        <button type="button" name="button" class="Add-To-Cart mb-md-2">Add to cart</button>
-                        <button type="button" name="button" class="Add-To-Wishlist">Add To Favourite</button>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                  <div class="product mb-lg-0 ">
-                     <img src="images/c.png" width="220" height="200" alt="" class="mx-auto d-block">
-                     <h6 class="">D3500 DSLR With AF-P DX NIKKOR 18-55mm f/3.55.6G VR Lens 24.2MP And Bluetooth</h6>
-                     <span class="d-block price float-left" >EGP1,676,00</span>
-                     <div class="rate text-right">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                     </div>
-                     <div class="clearfix">   </div>
-                     <div class="text-center">
-                        <button type="button" name="button" class="Add-To-Cart mb-md-2">Add to cart</button>
-                        <button type="button" name="button" class="Add-To-Wishlist">Add To Favourite</button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+      <section id="favouritelist-page" class="my-5">
+
+        <h2 class="h1 title text-center">Your Favourite List</h2>
+        <div class="row justify-content-center">
+           <div class="col-md-9 mb-5 ">
+              <div class="item" onclick="location.href='product.html'">
+                 <div class="case">
+                    <p>new</p>
+                 </div>
+                 <div  class="item-image w-xs-100  w-md-40 float-xs-center float-md-left ">
+                    <img src="images/nikon-z6-front.png" class="d-block mx-auto" width="150" height="150"alt="">
+                    <span class="d-block mr-0 text-center">D3500 DSLR With AF-P DX NIKKOR</span>
+                 </div>
+                 <div class="item-detail w-xs-100  w-md-60 pl-xs-0 pl-md-5">
+                    <p>Dimensions:<span>124 x 97 x 69.5 mm</span>|sensor type:<span>CMOS</span>|touch screen:<span>no</span>|zoom:<span>yes</span>|Autofocus:<span>yes</span>|Maximum output power:<span>1.2 dBm (EIRP)</span>|Night Vision Lens:<span>yes</span></p>
+                    <div class="rate">
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star"></span>
+                       <span class="fa fa-star"></span>
+                    </div>
+                    <span class="d-block price">$1,768,78</span>
+                    <button type="button" name="button" class="Add-To-Cart">Add To Cart</button>
+                 </div>
+              </div>
+           </div>
+           <div class="col-md-9 ">
+              <div class="item">
+                 <div class="case">
+                    <p>sale</p>
+                 </div>
+                 <div  class="item-image w-xs-100  w-md-40 float-xs-center float-md-left ">
+                    <img src="images/nikon-z6-front.png" class="d-block mx-auto" width="150" height="150"alt="">
+                    <span class="d-block mr-0 text-center">nickon z5</span>
+                 </div>
+                 <div class="item-detail w-xs-100  w-md-60 pl-xs-0 pl-md-5">
+                    <p>Dimensions:<span>124 x 97 x 69.5 mm</span>|sensor type:<span>CMOS</span>|touch screen:<span>no</span>|zoom:<span>yes</span>|Autofocus:<span>yes</span>|Maximum output power:<span>1.2 dBm (EIRP)</span>|Night Vision Lens:<span>yes</span></p>
+                    <div class="rate">
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star"></span>
+                       <span class="fa fa-star"></span>
+                    </div>
+                    <span class="d-block price">$1,768,78</span>
+                    <but+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ton type="button" name="button" class="Add-To-Cart">Add To Cart</button>
+                 </div>
+              </div>
+           </div>
+        </div>
       </section>
       <footer>
          <div id="upper-footer">
